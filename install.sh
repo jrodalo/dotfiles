@@ -13,6 +13,7 @@ brew update
 # Development
 brew install php
 brew install node
+brew install mariadb
 
 # Install QuickLook addons
 brew cask install qlstephen
