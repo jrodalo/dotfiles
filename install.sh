@@ -46,6 +46,9 @@ mkdir -p $HOME/Sites
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+# Configure global .gitignore file
+git config --global core.excludesfile ~/.dotfiles/.gitignore
+
 # Install the Palenight theme for iTerm
 open "${HOME}/.dotfiles/palenight.itermcolors"
 
