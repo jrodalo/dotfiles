@@ -101,4 +101,4 @@ alias gst="git status"
 alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
 
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1"
+alias myip="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print \$2}'"
