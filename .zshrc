@@ -100,3 +100,5 @@ source $ZSH/oh-my-zsh.sh
 alias gst="git status"
 alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
+
+alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1"
