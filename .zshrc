@@ -52,17 +52,13 @@ PROMPT='
 %F{green}%~
 %F{yellow}➜%f '
 
-# Functions
-function take() {
-  mkdir -p $@ && cd ${@:$#}
-}
-
-# Alias
+# Colors
 export CLICOLOR=1
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
-alias ls='ls -Glah'
-alias diff='diff --color'
-alias grep='grep --color --exclude-dir={.git,.svn}'
+
+# Alias
+alias ls='ls -lah'
+alias grep='grep --exclude-dir={.git,.svn}'
 alias hs='history | grep -i'
 
 # NVM - Node
@@ -86,4 +82,9 @@ function npm() {
 
 function node() {
   _install_nvm node "$@"
+}
+
+# Functions
+function take() {
+  mkdir -p $@ && cd ${@:$#}
 }
