@@ -60,6 +60,9 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 alias ls='ls -lah'
 alias grep='grep --exclude-dir={.git,.svn}'
 alias hs='history | grep -i'
+alias dcd='docker-compose down'
+alias dcu='docker-compose up -d'
+alias sail='bash vendor/bin/sail'
 
 # NVM - Node
 export NVM_DIR="$HOME/.nvm"
@@ -87,4 +90,16 @@ function node() {
 # Functions
 function take() {
   mkdir -p $@ && cd ${@:$#}
+}
+
+function serve() {
+  [ -d public ] && folder="public" || folder="."
+  open http://localhost
+  php -S 0.0.0.0:80 -t $folder
+}
+
+function cleanzip() {
+  zip -d $@ "__MACOSX/*"
+  zip -d $@ "*/.DS_Store"
+  unzip -vl $@
 }
