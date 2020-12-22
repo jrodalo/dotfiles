@@ -20,6 +20,10 @@ brew cask install quicklook-csv
 # Install useful stuff
 brew install jq
 
+# Install Iosevka
+brew tap homebrew/cask-fonts
+brew cask install font-iosevka
+
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir -p $HOME/Sites
