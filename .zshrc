@@ -58,6 +58,7 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # Alias
 alias ls='ls -lah'
+alias -g ...='../..'
 alias grep='grep --exclude-dir={.git,.svn}'
 alias hs='history | grep -i'
 alias dcd='docker compose down'
