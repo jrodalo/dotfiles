@@ -32,8 +32,9 @@ mkdir -p $HOME/Sites
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-# Configure global .gitignore file
+# Configure global Git
 git config --global core.excludesfile ~/.dotfiles/.gitignore
+git config --global init.defaultBranch main
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
