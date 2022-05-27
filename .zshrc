@@ -60,8 +60,8 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 alias ls='ls -lah'
 alias grep='grep --exclude-dir={.git,.svn}'
 alias hs='history | grep -i'
-alias dcd='docker-compose down'
-alias dcu='docker-compose up -d'
+alias dcd='docker compose down'
+alias dcu='docker compose up -d'
 alias sail='bash vendor/bin/sail'
 
 # NVM - Node
