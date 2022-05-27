@@ -50,7 +50,7 @@ zstyle ':vcs_info:*' enable git
 # Prompt
 PROMPT='
 %F{green}%~
-%F{yellow}➜%f '
+%F{red}❱%F{yellow}❱%F{green}❱%f '
 
 # Colors
 export CLICOLOR=1
