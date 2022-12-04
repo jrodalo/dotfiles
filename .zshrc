@@ -43,9 +43,13 @@ autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
+RPROMPT='${vcs_info_msg_0_} $(virtualenv_info)'
 zstyle ':vcs_info:git:*' formats '%F{125}(%b)%f'
 zstyle ':vcs_info:*' enable git
+
+function virtualenv_info {
+  [ $VIRTUAL_ENV ] && echo '(env: '`basename $VIRTUAL_ENV`')'
+}
 
 # Prompt
 PROMPT='
@@ -71,6 +75,7 @@ export NVM_DIR="$HOME/.nvm"
 # Python
 export WORKON_HOME="$HOME/.virtualenvs"
 export PIP_REQUIRE_VIRTUALENV=true
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 source /usr/local/bin/virtualenvwrapper.sh
 
