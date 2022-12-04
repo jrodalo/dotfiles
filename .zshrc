@@ -68,6 +68,12 @@ alias sail='bash vendor/bin/sail'
 # NVM - Node
 export NVM_DIR="$HOME/.nvm"
 
+# Python
+export WORKON_HOME="$HOME/.virtualenvs"
+export PIP_REQUIRE_VIRTUALENV=true
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+source /usr/local/bin/virtualenvwrapper.sh
+
 function _install_nvm() {
   unset -f nvm npm node
   # Set up "nvm" could use "--no-use" to defer setup, but we are here to use it
