@@ -22,7 +22,7 @@ brew install jq
 
 # Install Iosevka
 brew tap homebrew/cask-fonts
-brew cask install font-iosevka
+brew install --cask font-iosevka
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
