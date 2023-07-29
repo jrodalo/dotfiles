@@ -9,7 +9,7 @@
     "editor.fontFamily": "Iosevka",
     "editor.fontLigatures": true,
     "editor.fontSize": 16.5,
-    "editor.glyphMargin": false,
+    "editor.glyphMargin": true,
     "editor.guides.indentation": true,
     "editor.inlineSuggest.enabled": true,
     "editor.lightbulb.enabled": false,
