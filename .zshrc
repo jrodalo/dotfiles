@@ -68,6 +68,8 @@ alias hs='history | grep -i'
 alias dcd='docker compose down'
 alias dcu='docker compose up -d'
 alias sail='bash vendor/bin/sail'
+alias run='make'
+alias zip="zip -x *.DS_Store -x *__MACOSX*"
 
 # NVM - Node
 export NVM_DIR="$HOME/.nvm"
