@@ -54,7 +54,7 @@ function virtualenv_info {
 # Prompt
 PROMPT='
 %F{green}%~
-%F{red}❱%F{yellow}❱%F{green}❱%f '
+%F{red}»%F{yellow}»%F{green}»%f '
 
 # Colors
 export CLICOLOR=1
