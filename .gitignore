@@ -1,2 +1,17 @@
+# OSX
 .DS_Store
+
+# JetBrains
 .idea
+*.iml
+
+# VSCode
+.vscode
+
+# Python
+.venv
+__pycache__/
+*.egg-info/
+
+# NPM
+node_modules
