@@ -14,11 +14,11 @@ fi
 brew update
 
 # Install QuickLook addons
-brew cask install qlstephen
-brew cask install qlcolorcode
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install quicklook-csv
+brew install --cask qlstephen
+brew install --cask qlcolorcode
+brew install --cask qlmarkdown
+brew install --cask quicklook-json
+brew install --cask quicklook-csv
 
 # Install useful stuff
 brew install jq
