@@ -31,6 +31,9 @@ brew install --cask font-iosevka
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir -p $HOME/Sites
 
+# Disable "Last login" message on the Terminal
+touch ~/.hushlogin
+
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
